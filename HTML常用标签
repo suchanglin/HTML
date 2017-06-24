@@ -1,0 +1,155 @@
+单闭合标签
+
+<meta />	  设置页面信息的	 	
+<param />	  可为包含它的<object>或<applet>提供参数
+<br />	    换行	 
+<keygen />	定义生成密钥
+<hr />	    水平线	 
+<source />	为媒介元素（如<video>或<audio>）定义媒介源
+<area />	  图像映秀区域	
+<col />	    为表格中一个或多个列定义属性值
+<input />	  表单元素，type不同输入字段拥有不同形式	 
+<frame />	  定义frameset中的一个特定的窗口（框架）
+<link />	  链接样式表	 
+<embed />	  定义嵌入的内容，比如插件
+<basefont />定义基准字体，html5不支持<basefont>标签，不赞成使用	 	......	 
+
+
+
+字体效果
+
+<h1>…</h1>	   标题1（最大）一级级往下字体变小，网页一般从h1~h4，h4之后一般不会用了	
+<h6>…</h6>	   标题6（最小）	
+<s>…</s>	     删除线
+<del>…</del>	   删除线（表示删除）
+<b>…</b>	   粗体字	 
+<kbd>…</kbd>	键盘文字
+<strong>..</strong>	粗体字（强调）	
+<tt>…</tt>	打字体
+<i>…</i>	斜体字	 	
+<xmp>…</xmp>	固定宽度字体（在文件中空白、换行、定位功能有效）
+<em>…/em>	斜体字（强调）	 
+<plaintext>…</plaintext>	固定宽度字体（不执行标记符号）
+<dfn>...</dfn>	斜体字（表示定义）	
+<listing>…</listing>	固定宽度小字体
+<u>…</u>	底线	
+<font color=00ff00>…</font>	字体颜色（写成类似color=“#00ff00”也可以）
+<ins>...</ins>	底线（表示插入文字）	
+<font size=1>…</font>	最小字体
+<strike>…</strike>	横线	 
+<font style=font-size:100 px></font>	无限增大(字体大小为100px)
+
+
+
+区断标记
+
+<hr />	水平线	 
+<nobr>…</nobr>	禁止换行，No Break的缩写
+<p>…</p>	段落
+<hr size=9 />	水平线（设定大小）	
+<hr width=80% />	水平线（设定宽度）	 	
+<hr color=00ff00 />	水平线（设定颜色）	 	 	 
+<br />	换行	 	 	 
+<center>…</center>	对其包围的文本进行居中设置
+
+
+
+
+
+链接
+
+<base href=地址>	为页面上的所有链接规定默认地址或默认目标	 	
+<a  href=地址 target=_top></a>	指定超链接目标的 URL(全窗口连接)
+<a href=地址></a>	指定超链接目标的 URL	 	
+<a href=地址 target=页框名></a>	指定超链接目标的 URL（在指定页框连接）
+<a href=地址 target=_blank></a>	指定超链接目标的 URL(另开新窗口)	 	 	 
+
+
+
+图像/音乐
+
+<img src=图片地址 />	往网页贴图片	 	
+<img src=图片地址 border=1 />	设定贴的图片边框
+<img src=图片地址 width=180 />	设定贴的图片宽度	 
+<bgsound src=MID音乐文件地址 />	背景音乐设定
+<img src=图片地址 height=30 />	设定贴的图片高度	 	 	 
+
+
+
+
+表格
+
+<table aling=left>…</table>	表格位置，置左	 	
+<table cellpadding=参数>…</table>	指定网格线与网络线之间的距离（使用数字）
+<table aling=center>…</table>	表格的位置，置中	 
+<table cols=参数>…</table>	指定表格的栏数
+<table background=图片路径>…</table>	背景图片的URL=就是路径网址	 
+<table frame=参数>…</table>	设定表格外边框线的显示方式
+<table border=边框大小>…</table>	设定表格边框大小（使用数字）	 
+<table width=宽度>…</table>	指定表格宽度大小（使用数字）
+<table bgcolor=颜色码>…</table>	设置表格的背景颜色	 
+<table height=高度>…</table>	指定表格高度大小（使用数字）
+<table bordercolor=颜色码>…</table>	设定表格边框的颜色	 	
+<td colspan=参数>…</td>	指定储存格合并栏的栏数(使用数字)
+<table bordercolordark=颜色码>…</table>	设定表格暗边框的颜色	 	
+<td rowspan=参数>…</td>	指定储存格合并列的列数（使用数字）
+<table bordercolorlight=颜色码>…</table>	设定表格亮边框的颜色	 	 	 
+
+
+
+分割窗口
+
+<frameset col=”20%”,*>	左右分割，将左边框架分割大小为20%，右边框架的大小浏览器会自动调整
+<comment>…</comment>	加上批注
+<frameset rows=”20%,*”>	上下分割，将上面框架分割大小为20%，下面框架的大小浏览器会自动调整	
+<dd>…</dd>	设定定义列表的项目描述
+<frameset cols=”20%,*”>	分割左右两个框架	
+<frameset cols=”20%,*,20%”>	分割左中右三个框架	 
+
+<frameset rows=”20%,*,20%”>	分割上中下三个框架	 
+<dfn>…</dfn>	显示"定义"文字
+<dir>…</dir>	列表文字卷标
+<dl>…</dl>	设定定义列表的卷标
+	 	
+<dt>...</dt>	定义列表中的项目
+<a href target>	指定超级链接的分割窗口
+<a name=锚的名称>	被连结点的名称	
+<a href="#锚的名称>	指定锚名称的超级链接
+<a href>	指定超级链接	 
+<address>…</address>	用来显示电子邮箱地址
+<font face>	任意指定所用的字形
+<font size>	设定字体大小
+<form action>	设定	 	 
+<b>…</b>	粗体字	 	 	 
+<!--…-->	批注
+<base target>	指定超级链接的分割窗口	 	 	 
+<bgsound src>	加入背景音乐	 	 	 
+<big>…</big>	呈现大号字体效果	 	 	 
+<blink>	显示闪烁的字符串或文字（IE不支持）	 	 	 
+<body text link vlink>	设定文字颜色	 	 	 
+<body>…</body>	显示本文	 	 	 
+<br />	换行	 	 	 
+<capition align>	设定表格标题位置	 	 	 
+<caption>…</caption>	为表格加上标题	 	 	 
+<center>…</center>	对包围的文本进行居中处理，html5不支持此标签	 	 	 
+<cite>…<cite>	用于引经据典的文字	 	 	 
+<code>…</code>	用于列出一段程序代码	 	 	 
+ <em>…</em>	强调之用
+ 
+ 
+ 
+跑马灯标签功能
+<marquee>...</marquee>	普通卷动
+<marquee behavior=slide>...</marquee>	滑动
+<marquee behavior=scroll>...</marquee>	预设卷动
+<marquee behavior=alternate>...</marquee>	来回卷动
+<marquee direction=down>...</marquee>	向下卷动
+<marquee direction=up>...</marquee>	向上卷动
+<marquee direction=right></marquee>	向右卷动
+<marquee direction=left></marquee>	向左卷动
+<marquee loop=2>...</marquee>	卷动次数
+<marquee width=180>...</marquee>	设定宽度
+<marquee height=30>...</marquee>	设定高度
+<marquee bgcolor=FF0000>...</marquee>	设定背景颜色
+<marquee scrollamount=30>...</marquee>	设定卷动距离
+<marquee scrolldelay=300>...</marquee>	设定卷动时间
