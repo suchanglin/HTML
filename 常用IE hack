@@ -1,0 +1,9 @@
+_width:400px; /*IE6*/
+
++width:300px; /*IE6、IE7*/
+
+*width:400px; /*IE6、IE7*/
+
+width:200px\9; /*IE6 IE7 IE8 IE9 IE10*/
+
+width:100px\0; /*IE8 IE9 IE10 IE11*/
