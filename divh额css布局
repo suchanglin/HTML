@@ -1,0 +1,146 @@
+
+
+们拿到一张网页美工图片我们将从上下、上中下、左右、上中（中包括左右）下布局框架来思考。
+
+
+index.html的html代码：
+
+<!DOCTYPEhtmlPUBLIC"-//W3C//DTDXHTML1.0Transitional//EN"  
+ 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xml="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type"content="text/html;charset=gb2312"/> 
+<title>css布局案例实验页面-www.DIV CSS5.com.cn</title> 
+<link href="index.css"rel="stylesheet"type="text/css"/> 
+</head>copyrightwww.DIV CSS5.comDIV CSS5  
+<body> 
+<div id="header">我是头部（上）</div> 
+<div id="centers"> 
+<div class="c_left">我是中的左</div> 
+<div class="c_right">我是中的右</div> 
+<div class="clear"> </div> 
+</div> 
+<div id="footer">我是底部（下）</div> 
+</body> 
+</html> 
+
+
+
+index.css的CSS代码如下：
+
+
+
+body,div,address,blockquote,iframe,ul,ol,dl,dt,dd,li,dl,h1,h2,h3,h4,h5,h6,p,pre,table,  
+ 
+caption,th,td,form,legend,fieldset,input,button,select,textarea{margin:0;padding:0;  
+ 
+font-weight:normal;font-style:normal;font-size:100%;font-family:inherit;}  
+ol,ul,li{list-style:none;}  
+img{border:0;}  
+body{color:#000;background:#FFF;text-align:center;font:12px/1.5Arial,Helvetica,sans-serif;}  
+.clearfix:after{clear:both;content:".";display:block;height:0pt;visibility:hidden;overflow:hidden;}  
+ 
+.clear{clear:both;height:1px;margin-top:-1px;width:100%;}  
+ 
+.dis{display:block;}  
+.undis{display:none;}  
+ 
+/*此上面代码是初始CSS模板，下面是新写CSS布局框架代码*/  
+ 
+#header,#centers,#footer{width:100%;margin:0auto;  
+ 
+clear:both;font-size:18px;line-height:68px;font-weight:bold;}  
+#header{height:68px;border:1pxsolid#CCCCCC;}  
+#centers{padding:8px0;}  
+#footer{border-top:1pxsolid#CCCCCC;background:#F2F2F2;}  
+ 
+#centers.c_left{float:left;width:230px;border:1pxsolid#00CC66;  
+ 
+background:#F7F7F7;margin-right:5px;}  
+#centers.c_right{float:left;width:500px;border:1pxsolid#00CC66;background:#F7F7F7}  
+
+
+
+
+按以下步骤来建设一个网站的页面:
+
+1、顶部部分，其中包括了LOGO、MENU和一幅Banner图片；
+
+2、页面中间部分，那就是我们的主体了，要求打开首页快速，所以我们在网站发布的信息设计为三列。
+
+3、底部，包括一些版权信息。
+
+根据以上设想，我们定义如下div的结构
+
+DIV结构如下：
+　　
+│body {}　/*这是一个HTML元素*/
+　　
+└#Container {}　/*页面层容器*/
+　　　　　
+├#Header {}　/*页面头部*/
+　　　　　
+├#MianBody {}　/*页面主体*/
+　　　　　
+│　├#mainbody-left {}　/*主体页面左边*/
+　　　　　
+│　└#mainbody-center {}　/*主体页面中间*/
+│　└#MainBody -right{}　/*主体页面右边*/
+　
+└#footer {}　/*页面底部*/
+
+
+用DIV+CSS做一个导航栏是非常容易的，而且我们可以通过css来对导航栏的样式方便的作出调整。用div设置导航栏一般就用<ul>和<li>标签。
+
+4、高度显示效果不同
+一般情况下只需要使用height: 100px;即可，当显示效果不同时，则可以_height: 100px;来对IE6的高度进行设置。
+
+5、嵌套效果不不同.
+有些情况下如果div中嵌套的图片大于外层div的高度，则IE6中对高度的设置始终无效，这时要注意对该css添加overflow属性，overloaw:hidden,
+则可隐藏超出边界的部分。
+
+
+
+
+
+DIV+CSS网页布局常用的一些基础知识整理
+
+
+一．文件命名规范
+全局样式：global.css；
+框架布局：layout.css；
+字体样式：font.css；
+链接样式：link.css；
+打印样式：print.css；
+
+二．常用类/ID命名规范
+页　眉：header
+内　容：content
+容　器：container
+页　脚：footer
+版　权：copyright　
+导　航：menu
+主导航：mainMenu
+子导航：subMenu
+标　志：logo
+标　语：banner
+标　题：title
+侧边栏：sidebar
+图　标：Icon
+注　释：note
+搜　索：search
+按　钮：btn
+登　录：login
+链　接：link
+信息框：manage
+……
+
+常用类的命名应尽量以常见英文单词为准，做到通俗易懂，并在适当的地方加以注释。对于二级类/ID命名，则采用组合书写的模式，
+后一个单词的首字母应大写：诸如“搜索框”则应命名为“searchInput”、“搜索图标”命名这“searchIcon”、“搜索按钮”命名为“searchBtn“等等。
+
+
+
+
+
+
