@@ -1,0 +1,17 @@
+
+百度异步统计代码：要求放在head前面。
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?94a1e06bbce219d29285cee2e37d1d26";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+1. 宣告并初始化全域变量，一般在动态载入的源码中使用。
+2. 节点操作所生的 <script> 的优先度比静态资源低，不会阻碍网页载入。
+
