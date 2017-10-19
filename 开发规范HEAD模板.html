@@ -1,5 +1,3 @@
-HTML
-
 
 <!DOCTYPE html>         //文档类型
 <html lang="zh-cmn-Hans">   //语言属性：简体中文
@@ -19,12 +17,9 @@ HTML
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />           //通过Rss读取内容
     <link rel="shortcut icon" href="path/to/favicon.ico">       //Tab 头图标
-</head> 
+    <style type="text/css">
+      
 
-
-
-
-CSS
 
 
 .declaration-order {
@@ -67,31 +62,10 @@ CSS
 
 
 
-异步加载第三方内容
+/* 异步加载第三方内容 当你无法保证嵌入第三方内容比如 Youtube 视频或者一个 like/tweet 按钮可以正常工作的时候，你需要考虑用异步加载这些代码，避免阻塞整个页面加载。 (function() { var script, scripts = document.getElementsByTagName('script')[0]; function load(url) { script = document.createElement('script'); script.async = true; script.src = url; scripts.parentNode.insertBefore(script, scripts); } load('//apis.google.com/js/plusone.js'); load('//platform.twitter.com/widgets.js'); load('//s.widgetsite.com/widget.js'); }()); 避免使用 jQuery 实现动画 禁止使用 slideUp/Down() fadeIn/fadeOut() 等方法； 尽量不使用 animate() 方法； */
 
-当你无法保证嵌入第三方内容比如 Youtube 视频或者一个 like/tweet 按钮可以正常工作的时候，你需要考虑用异步加载这些代码，避免阻塞整个页面加载。
-(function() {
-
-    var script,
-        scripts = document.getElementsByTagName('script')[0];
-
-    function load(url) {
-      script = document.createElement('script');
-      script.async = true;
-      script.src = url;
-      scripts.parentNode.insertBefore(script, scripts);
-    }
-
-    load('//apis.google.com/js/plusone.js');
-    load('//platform.twitter.com/widgets.js');
-    load('//s.widgetsite.com/widget.js');
-
-}());
+    </style>
+</head> 
+</html>
 
 
-
-
-避免使用 jQuery 实现动画
-
-禁止使用 slideUp/Down() fadeIn/fadeOut() 等方法；
-尽量不使用 animate() 方法；

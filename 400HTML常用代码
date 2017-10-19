@@ -19,13 +19,9 @@ blink：使文字闪烁
 none：不显示上述任何效果
 
 背景
-1、背景颜色
-background-color: 参数
-2、背景图片
-background-image: url(URL)
-URL就是背景图片的存放路径，none表示无。
-3、背景图片重复
-background-repeat: 参数
+1、背景颜色 background-color: 参数
+2、背景图片 background-image: url(URL)  URL就是背景图片的存放路径，none表示无。
+3、背景图片重复 background-repeat: 参数
 参数取值范围 ：
 no-repeat：不重复平铺背景图片
 repeat-x：使图片只在水平方向上平铺
@@ -39,12 +35,9 @@ fixed：网页滚动时，背景图片相对于浏览器的窗口而言，固定
 scroll：网页滚动时，背景图片相对于浏览器的窗口而言，一起滚动
 
 区块
-1、单词间距 
-word-spacing: 间隔距离 
-2、字母间距 
-letter-spacing: 字母间距
-3、文本对齐
-text-align: 参数
+1、单词间距  word-spacing: 间隔距离 
+2、字母间距  letter-spacing: 字母间距
+3、文本对齐  text-align: 参数
 参数的取值：
 left：左对齐
 right：右对齐

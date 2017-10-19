@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>二列布局</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    div {
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .main {
+        width: 960px;
+       /*  height: 600px; */  
+        margin: 0 auto;
+        border: 1px solid red; /*当没有设定高度的时候，父元素框塌陷，但浮动框不能溜出父框范围 */
+    }
+ /*左浮动样式*/
+    .left {
+        width: 300px;
+        height: 530px;
+        background: #ccc;
+        float:left
+    }
+    /*右浮动样式*/
+    .right {
+        width: 600px;
+        height: 530px;
+        background: #FCC;
+        float: right;
+    }
+   
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+
+</html>
