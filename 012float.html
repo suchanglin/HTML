@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    border: 3px solid blue;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    border: 3px solid #73AD21;
+}
+
+section {
+    margin-left: 206px;
+    border: 3px solid red;
+}
+</style>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?73c27e26f610eb3c9f3feb0c75b03925";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<div class="clearfix">
+
+<nav>
+  <span>nav</span>
+    <ul>
+      <li><a target="_blank" href="../default.html">Home</a></li>
+      <li><a target="_blank" href="default.html">CSS</a></li>
+      <li><a target="_blank" href="../html/default.html">HTML</a></li>
+      <li><a target="_blank" href="../js/default.html">JavaScript</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <span>section</span>
+    <p>Notice we have put a clearfix on the div container. It is not needed in this example, but it would be if the nav element was longer than the non-floated section content.</p>
+  </section>
+
+  <section>
+    <span>section</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+  </section>
+
+</div>
+
+</body>
+</html>
