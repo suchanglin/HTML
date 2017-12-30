@@ -1,0 +1,271 @@
+每个方案的优缺点   浮动，兼容性好    flex基本移动端   网格
+
+
+box-sizing:content-box;   box-sizing:border-box;
+
+dom.style.width/height  可以获取内联样式的宽高
+
+dom.currentStyle.width/height  只有支持IE
+
+window.getComputedStyle(dom).width/height
+
+根据盒模型解释边距重叠
+块级格式化上下文
+
+
+float：不为none   position：不是relative,
+
+overfloat:
+
+
+
+自定义事件
+
+element.onclick   element.addEventListener('click',function(){},false)
+
+事件流 捕获  目标  冒泡  window document html body div   document.body
+
+
+ document = document.documentElement.  body = document.body
+
+
+
+
+window  document html body 
+
+event.preventDefault() a标签
+event.stopPropagation()  父元素 子元素
+event.stopImmediatePropagation()  时间响应优先级
+event.currentTarget  事件委托  重点：判断哪个子元素被点击
+event.target  当前绑定的元素，如上面的父元素
+
+
+自定义事件
+
+var eve = new Event('custome');
+ev.addEventListener('custome',function(){
+    console.log('custome');
+}
+
+ev.dispachEvent(eve)  这个来触发eve
+
+
+
+
+
+
+
+
+
+
+
+什么是持久化连接  什么是管线化  http协议类主要特点：    简单快速  灵活  无连接  无状态
+
+GET POST PUT DELETE HEAD
+
+GET与POST的区别
+get在浏览器中回退是无害的，URL地址可以被收藏，请求被浏览器主动缓存，参数保留在浏览器历史记录里，有长度限制
+
+post放在requestbody中，get在URL
+
+
+原型链：
+创建对象有几种方法
+原型、构造函数、实例、原型链
+instanceof的原理
+new运算
+第一种：
+var o1={name:'o1'};
+var o11 = new Object({name:'o11'})
+第二种
+var M = function(name){this.name=name;}
+var o3 = new M('o3');
+
+第三种：
+var p = {name:'p';}
+var o4 = Object.creat(p);
+
+构造函数.prototype->原型对象
+原型对象.constructor->构造函数
+实例._proto_->原型对象
+原型对象._proto_->上一级原型对象
+
+new 运算符
+
+var new = function(){
+  var o = Object.create(func.prototype);  // 创建一个空对象，参数为原型对象
+  var k = func.call(o);     //    执行上述创建的对象
+  if(type k === 'object'){    //  判断
+     return k;
+  } else{
+   return o;
+  }
+}
+ 
+
+
+对象
+
+function Animal(){
+this.name = name;}
+
+class Animal2{
+constructor(){
+    this.name = name;
+}}
+
+
+
+
+继承
+借助构造函数实现继承。
+
+fucntion Parent(){
+
+this.name = 'parent1';}
+
+function Child(){ 
+Parent.call(this);   //apply
+this.type = 'child1';
+}
+缺点：不能继承原型对象的方法，如添加Parent.prototype.say = function(){};在Child中无法继承。
+
+借助原型链继承
+function Parent2(){ this.name = 'parent2';}
+function Child2(){ this.type = 'child2';}
+ 
+Child2.prototype = new Parent();
+
+缺点：假如在Parent2中再添加this.play = [1,2,3]
+
+s1 = new Child2();s1.play = [1,2,3];   //一切没问题
+s2 = new Child2();s2.play = [1,2,3];
+
+但是 s1.play.push(4) 后，
+
+s1.play = [1,2,3,4];   //s1和s2都一样，修改谁另一个都发生变化，显然是不能接受的
+s2.play = [1,2,3,4];
+
+组合方式继承3
+
+function Parent3(){this.name = 'parent3';this.play = [1,2,3];}
+
+function Child3(){ Parent3.call(this);this.type = 'child3';}
+
+Child.prototype = Parent3.prototype;
+
+var s3 = new Child3();
+var s4 = new Child3();
+s3.push(5);
+
+s3.play //[1,2,3,5]
+s4.play  //[1,2,3]         
+
+
+缺点：s3.constructor = Parent3,而不是期望的Child3
+
+解决方案：
+Child3.prototype =Object.create( Parent3.prototype);  //中间桥梁
+Child3.prototype.constructor = Child3;
+
+
+通信类
+
+什么是同源策略  协议  域名  端口 
+
+前后端如何通信  Ajax （同源通信）  WebSocket（不受同源策略限制） CORS(支持跨域，也支持同源)
+
+如何创建Ajax
+
+
+跨域通信的几种方式  JSONP CORS() postMessage（html5） WebSocket  Hash(# 不刷新)  
+
+
+CSRF跨站请求伪造 攻击原理
+
+防御措施 
+
+Token验证   点击引诱的链接只带cookie，没有Token 
+
+Referer   页面来源,服务器判断站点来源
+
+隐藏令牌
+
+
+XSS 跨脚本
+
+ 向页面注入js脚本
+
+
+----------------------------------------------------------------------------------
+渲染机制   JS运行机制   页面性能    错误监控
+
+reflow 
+增加 删除 修改dom节点  移动dom  修改css   resize窗口
+
+repaint
+
+
+
+console.log(1)
+
+settimeout(function(){  console.log(3),0);}  //异步任务，要挂起
+
+console.log(2)  //同步
+
+单线程，一次只能一次任务，优先同步，再响应异步，任务队列。
+--------------------------------------------------------------------------------------
+
+console.log('A')
+
+while(true){  };
+
+consnole.log('B');
+
+答案是A，三者都是同步任务，while死循环不能完成，所以无法下一步执行出B.
+
+console.log('A')
+
+while(true){ settimeout(function(){  console.log(3),0);} };
+
+consnole.log('B');
+
+y依然只有B
+--------------------------------------------------------------------------------------
+
+for(var i=0;i<4;i++){
+
+  settimeout(  function(){console.log(i);},1000);
+}
+
+输出的4个4；
+
+异步队列等待插入，for太快了，完成了，settimeout还没开始呢
+
+
+执行栈 是否空     
+
+setTimeout和setInterval
+DOM事件  
+ES6的Promise
+
+
+页面性能
+
+1资源压缩合并，减少http请求
+2非核心代码异步加载   异步加载方式  异步加载的区别 
+3利用浏览器缓存    缓存的分类    缓存的原理
+4使用CDN
+
+
+5与解析DNS
+<meta http-equiv ="x-dns-prefetch-control" content = "on">
+<link rel = "dns-prefetch" href ="//host_name_to_"prefetch.come">
+
+
+异步加载的方式
+1.动态脚本加载    2.defer      3.async
+
+ 异步加载的区别
+defer是在HTML解析完之后才会执行，如果是多个，按照加载的顺序依次执行
+async 是在加载完之后立即执行，如果是多个，执行顺序和加载顺序无关
