@@ -1,0 +1,147 @@
+ 基础知识  原型原型链 作用域 闭包 异步 单线程 
+
+
+html   css   不懂就查，主动获取知识
+
+基层工程师  项目经验  工程师的自我修养
+
+扎实的基础会让你高效学习新技术
+
+
+JS中使用typeof
+
+
+window.onload DOMContentLoaded   浏览器渲染过程
+
+
+
+
+对象  数组  函数   都具有引用类型   typeof可以测出函数， 三种都是object{ } []  null
+
+
+阅读源码是高效提高技能的方式
+
+
+说一下变量提升的理解  说明this几种不同的使用场景创建10 个a
+
+执行上下文   this 作用域  作用域链  闭包
+
+
+占位
+
+没有块级作用域
+
+if
+
+JS基础知识    树
+
+BOM
+如何检测浏览器的类型     
+
+拆解URL的各部分
+
+navigator   screen   protocol  serach  hash  
+
+
+
+使用的代理
+
+代码简洁    减轻服务器请求
+
+
+ 手动编写一个ajax，不依赖第三方
+
+跨域的几种实现方式  XMLHttpRequest
+
+跨域：http80   https:43 
+三个标签允许跨域加载资源
+<img src = xxx>  用于打点统计
+
+<link href=xxx>  可以使用CDN
+
+<script src=xxx> 可以使用CDN，可以用于JSONP
+
+  储存
+
+cookie  本身用于客户端和服务端通信，但是它有本地存储的功能
+
+document.cookie =...获取和修改即可
+
+sessionStorage
+
+
+IDE
+webstorm  sublime  vscode  atom(github)  
+插件  插件 插件  
+
+sessionStorage  localStorage
+
+
+AMD
+
+全局函数  define
+
+全局函数 require 
+
+依赖js 会自动、异步加载
+
+AMD、CommonJS的使用场景
+
+需要异步加载用AMD
+
+使用了npm之后建议使用Commonjs
+
+  运行环境
+
+ 性能优化   安全性
+
+
+1输入URL加载HTML形式    2加载HTML中的静态资源形式
+
+页面加载过程 
+浏览器根据DNS服务器得到域名的IP地址
+
+向这个IP的机器发送http请求
+服务器收到，处理并返回http请求
+浏览器得到返回内容
+
+渲染
+HTML结构生成
+
+原则
+多使用内存 缓存   
+减少CPU计算  较少网络
+
+
+入手：加载页面和静态资源      页面渲染
+
+
+加载页面和静态资源 ：静态资源的压缩合并     静态资源缓存使用 cdn让资源加载更快
+
+渲染优化：css放前面  js放后面     懒加载（图片加载，下拉加载）
+
+减少DOM查询，对DOM查询做缓存
+
+减少DOM操作，多个操作尽量合并在一起执行
+
+事件节流
+
+尽早执行操作  DOMContentLoade
+
+
+XSS
+在新浪博客写一篇文章，同时偷偷插入一段《script》
+攻击代码中，获取cookie，发送到自己的服务器
+
+前端替换关键字，例如替换< &lt;
+后端替换（推荐）
+
+XSRF
+你已经登录一个购物网站，正在浏览器商品。。。
+
+增加验证流程  输入指纹 密码  短信验证码
+
+做一些外包项目，或者开源项目
+
+老师简历上写一年经验貌似已经没面试机会了
+你是说拉钩吗，一万年不匹配
