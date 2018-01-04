@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="div1">
+    <p id="p1">激活</p>
+    <p id="p2">取消</p>
+    <p id="p3">取消</p>
+    <p id="p4">取消</p>
+  </div>
+  <div id="div2">
+    <p id="p5">取消</p>
+    <p id="p6">取消</p>
+  </div>
+  <script type="text/javascript">
+    var p1 = document.getElementById('p1');
+    var body = document.body;
+    function bindEvent (elem,type,fn) {
+        elem.addEventListener(elem, type, fn);
+    }
+    bindEvent(p1,'click',function (e) {
+      e.stopPropagation();
+      alert('激活')
+    })
+    bindEvent(body,'click',function (e) {
+      alert('取消')
+    })
+  </script>
+
+
+<!--   //代理-->
+<div id="div3">
+  <a href="#">a1</a>
+  <a href="#">a2</a>
+  <a href="#">a3</a>
+  <a href="#">a4</a>
+<!-- 会随时增加更多a标签 --></div>
+
+
+<script type="text/javascript">
+  var div3 = document.getElementById('div3');
+  div3.addEventListener('click',function (e) {
+    var target = e.target;
+    if (target.nodeName === 'A') {
+      alert(target.innerHTML)
+    }
+  })
+
+
+
+
+  // 完善通用绑定事件的函数
+  function bindEvent(elem,type,selector,fn){
+    if (fn == null) {
+      fn = selector;
+      selector = null;
+    }
+
+    elem.addEventListener(type, function (e) {
+      var target;
+      if (selector) {
+        target = e.target;
+        if (target.matches(selector)) {
+          fn.call(target, e);
+        }
+      }else {
+        fn(e);
+      }
+    })
+  }
+
+
+  // 适用代理
+  var div1 = document.getElementById('div1');
+  bindEvent(div1,'click','a',function (e) {
+    console.log(this.innerHTML);
+  })
+
+  //不适用代理
+  var a = document.getElementById('a1');
+  bindEvent(div1,'click',function (e) {
+    console.log(a.innerHTML);
+  })
+
+//XMLHttpRequest
+//ie:ActiveXObject
+
+  var xhr = new XMLHttpRequest();
+
+  xhr =open("GET", "/api", false);
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4) {
+      if (xhr.status == 200) {
+        alert(xhr.responseText);
+      }
+    }
+  };
+  xhr.send(null);
+
+//跨域
+//前端JSON
+//服务器端设置 http header
+window.callback = function (data) {
+  console.log(data)
+}
+
+
+localStorage.setItem(key, value);
+localStorage.getItem(key);
+
+
+
+
+efine(function () {
+    var alertName = function (str) {
+      alert("I am " + str);
+    }
+
+
+    var alertAge = function (num) {
+      alert("I am " + num + " years old");
+    }
+
+
+    return {
+      alertName: alertName,
+      alertAge: alertAge
+    };
+
+
+  });
+
+
+//
+document.createDocumentFragment();
+</script>
+<script src="http://coding.m.com"></script>
+</body>
+</html>
