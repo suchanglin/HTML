@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>challenge</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
+
+    body {
+        background-color: #fff;
+    }
+    /*-----------------top-----------------*/
+
+    .top {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+    }
+
+    .top_content {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .top_content li {
+        list-style: none;
+        float: right;
+        width: 90px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .top_content a {
+        text-decoration: none;
+        color: #666;
+    }
+
+    .top_content a:hover {
+        color: #f01400;
+    }
+    /*---------------主体------------------*/
+
+    .wrap {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .wrap>div {
+        margin-top: 10px;
+    }
+    /*----------------nav---------------------*/
+
+    .nav {
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .logo,
+    .nav_content {
+        float: left;
+    }
+
+    .nav_content {
+        margin-left: 50px;
+    }
+
+    .nav_content li {
+        list-style: none;
+        float: left;
+    }
+
+    .nav_content a {
+        text-decoration: none;
+        display: inline-block;
+        width: 100px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .nav_content a:hover,
+    .nav_content .current {
+        background-color: #C93847;
+        color: #fff;
+    }
+    /*-----------------ad--------------------*/
+
+    .ad {}
+    /*-----------------scroll_news--------------------*/
+
+    .scroll_news {
+        height: 35px;
+        color: #fff;
+    }
+
+    .scroll_news .scroll_news_left {
+        float: left;
+        background-color: #C93847;
+        height: 35px;
+        line-height: 35px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .scroll_news .scroll_news_right {
+        float: left;
+        height: 35px;
+        line-height: 35px;
+        background-color: #3E3E3E;
+        width: 850px;
+        text-indent: 2em;
+    }
+    /*-------------------course------------------*/
+
+    .course div {
+        width: 330px;
+        border: 1px solid #ccc;
+        float: left;
+        text-align: center;
+    }
+
+    .course .course_mid {
+        margin: 0 2px;
+    }
+    /*--------------------main-----------------*/
+
+    .main {}
+
+    .news,
+    .activity,
+    .sidebar {
+        float: left;
+        width: 330px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+    }
+
+    .activity {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .title {
+        color: #fff;
+        background-color: #C93847;
+        height: 35px;
+        line-height: 35px;
+        padding-left: 20px;
+    }
+
+    .news_content div {
+        height: 80px;
+        margin: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .news_content span {
+        display: block;
+        height: 50px;
+        width: 40px;
+        line-height: 25px;
+        text-align: center;
+        background-color: #C93847;
+        float: left;
+        margin: 10px 20px 0 0;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    .news_content p {
+        width: 250px;
+        float: right;
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+
+    .news_content p strong {
+        line-height: 2em;
+    }
+
+    .activity_content {
+        padding: 20px;
+        height: 243px;
+    }
+
+    .activity_content div {
+        width: 290px;
+        text-align: center;
+    }
+
+    .activity_content img {
+        width: 290px;
+    }
+
+    .activity_content li {
+        list-style: none;
+    }
+
+    .sidebar_content {
+        height: 243px;
+        margin: 20px;
+    }
+
+    .sidebar p {
+        line-height: 24px;
+    }
+    /*--------------------copyright-----------------*/
+
+    .copyright {
+        clear: both;
+        padding-top: 10px;
+    }
+
+    .copyright div {
+        height: 60px;
+        line-height: 60px;
+        background-color: #E7E7E7;
+        text-align: center;
+    }
+    /*-------------------------------------*/
+    /*-------------------------------------*/
+    /*-------------------------------------*/
+    /*-------------------------------------*/
+    /*-------------------------------------*/
+    </style>
+    <script src="js/myfocus-2.0.1.min.js"></script>
+    <script type="text/javascript">
+    myFocus.set({ id: "boxID", pattern: "mF_fancy", width: 1000, height: 310, txtHeight: 0 });
+    </script>
+</head>
+
+<body>
+    <!-- top开始 -->
+    <div class="top">
+        <div class="top_content">
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">加入收藏</a></li>
+                <li><a href="#">设为首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- top结束 -->
+    <!-- 主体开始 -->
+    <div class="wrap">
+        <!-- nav开始 -->
+        <div class="nav">
+            <div class="logo"><img src="http://img.mukewang.com/53edadad0001efe202000070.jpg" alt=""></div>
+            <div class="nav_content">
+                <ul>
+                    <li><a class="current" href="#">首页</a></li>
+                    <li><a href="#">产品特色</a></li>
+                    <li><a href="#">解决方案</a></li>
+                    <li><a href="#">产品价格</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav结束 -->
+        <!-- ad开始 -->
+        <div class="ad">
+            <div id="boxID">
+                <div class="loading"><img src="http://img.mukewang.com/53edad8c000175cb00300029.jpg" alt="图片加载中"></div>
+                <div class="pic">
+                    <ul>
+                        <li><img src="http://img.mukewang.com/53edad3e0001afad10000318.jpg" alt=""></li>
+                        <li><img src="http://img.mukewang.com/53edad2c0001b61310000314.jpg" alt=""></li>
+                        <li><img src="http://img.mukewang.com/53edad1600019ae910000310.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ad结束 -->
+        <!-- scroll_news开始 -->
+        <div class="scroll_news">
+            <div class="scroll_news_left">滚动新闻</div>
+            <div class="scroll_news_right">这里是滚动新闻</div>
+        </div>
+        <!-- scroll_news结束 -->
+        <!-- course开始 -->
+        <div class="course">
+            <div><img src="http://img.mukewang.com/53edad54000119fb03300130.jpg" alt=""><span>玩转BootStrap</span></img>
+            </div>
+            <div class="course_mid"><img src="http://img.mukewang.com/53edad690001260a03300130.jpg" alt=""><span>企业网站案例</span></img>
+            </div>
+            <div><img src="http://img.mukewang.com/53edad7a0001cde803300130.jpg" alt=""><span>JavaScript基础</span></img>
+            </div>
+        </div>
+        <!-- course结束 -->
+        <!-- main开始 -->
+        <div class="main">
+            <div class="news">
+                <h2 class="title">新闻中心</h2>
+                <div class="news_content">
+                    <div><span>8月<br>23日</span>
+                        <p><strong>学习计划之“Android攻城狮初养成”</strong>
+                            <br>想成为Android攻城狮？想开发一款专属APP？没有任何基础的你，应该从何学起？</p>
+                    </div>
+                    <div><span>8月<br>23日</span>
+                        <p><strong>学习计划之“Android攻城狮初养成”</strong>
+                            <br>想成为Android攻城狮？想开发一款专属APP？没有任何基础的你，应该从何学起？</p>
+                    </div>
+                    <div><span>8月<br>23日</span>
+                        <p><strong>学习计划之“Android攻城狮初养成”</strong>
+                            <br>想成为Android攻城狮？想开发一款专属APP？没有任何基础的你，应该从何学起？</p>
+                    </div>
+                </div>
+            </div>
+            <div class="activity">
+                <h2 class="title">热门活动</h2>
+                <div class="activity_content">
+                    <div><img src="http://img.mukewang.com/53edacdd0001b8e804820302.jpg" alt=""></div>
+                    <ul>
+                        <li>慕课网2048源码征集</li>
+                        <li>慕课网2048源码征集</li>
+                        <li>慕课网2048源码征集</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar">
+                <h2 class="title">联系我们</h2>
+                <div class="sidebar_content">
+                    <p>讲师招募</p>
+                    <p>邹同学</p>
+                    <p>电话：18911888156</p>
+                    <p>QQ：123456798</p>
+                    <p>E-mail：hehe@126.com</p>
+                    <br>
+                    <p>网站合作</p>
+                    <p>蒋同学</p>
+                    <p>电话：1300000000</p>
+                    <p>QQ：546789132</p>
+                    <p>E-mail：emoji@126.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- main结束 -->
+        <div class="copyright">
+            <div>Copyright 2016 imooc.com All Rights Reserved 京ICP备 13046642号-2</div>
+        </div>
+    </div>
+    <!-- 主体结束 -->
+</body>
+
+</html>
