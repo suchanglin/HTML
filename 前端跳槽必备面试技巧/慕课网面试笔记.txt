@@ -10,6 +10,7 @@ dom.currentStyle.width/height  只有支持IE
 window.getComputedStyle(dom).width/height
 
 根据盒模型解释边距重叠
+
 块级格式化上下文
 
 
