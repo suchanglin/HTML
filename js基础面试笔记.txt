@@ -1,7 +1,7 @@
  基础知识  原型原型链 作用域 闭包 异步 单线程 
 
 
-html   css   不懂就查，主动获取知识
+html   css   （不懂就查，主动获取知识）
 
 基层工程师  项目经验  工程师的自我修养
 
@@ -11,12 +11,12 @@ html   css   不懂就查，主动获取知识
 JS中使用typeof
 
 
-window.onload DOMContentLoaded   浏览器渲染过程
+window.onload    DOMContentLoaded   浏览器渲染过程
 
 
 
 
-对象  数组  函数   都具有引用类型   typeof可以测出函数， 三种都是object{ } []  null
+对象  数组  函数   都具有引用类型   typeof可以测出函数， 三种都是object  { } []  null
 
 
 阅读源码是高效提高技能的方式
@@ -24,7 +24,7 @@ window.onload DOMContentLoaded   浏览器渲染过程
 
 说一下变量提升的理解  说明this几种不同的使用场景创建10 个a
 
-执行上下文   this 作用域  作用域链  闭包
+执行上下文   this  作用域  作用域链  闭包
 
 
 占位
@@ -54,6 +54,7 @@ navigator   screen   protocol  serach  hash
 跨域的几种实现方式  XMLHttpRequest
 
 跨域：http80   https:43 
+
 三个标签允许跨域加载资源
 <img src = xxx>  用于打点统计
 
@@ -72,6 +73,7 @@ sessionStorage
 
 IDE
 webstorm  sublime  vscode  atom(github)  
+
 插件  插件 插件  
 
 sessionStorage  localStorage
@@ -144,4 +146,5 @@ XSRF
 做一些外包项目，或者开源项目
 
 老师简历上写一年经验貌似已经没面试机会了
+
 你是说拉钩吗，一万年不匹配
