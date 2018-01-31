@@ -1,147 +1,150 @@
- »ù´¡ÖªÊ¶  Ô­ÐÍÔ­ÐÍÁ´ ×÷ÓÃÓò ±Õ°ü Òì²½ µ¥Ïß³Ì 
+ åŸºç¡€çŸ¥è¯†  åŽŸåž‹åŽŸåž‹é“¾ ä½œç”¨åŸŸ é—­åŒ… å¼‚æ­¥ å•çº¿ç¨‹ 
 
 
-html   css   ²»¶®¾Í²é£¬Ö÷¶¯»ñÈ¡ÖªÊ¶
+html   css   ï¼ˆä¸æ‡‚å°±æŸ¥ï¼Œä¸»åŠ¨èŽ·å–çŸ¥è¯†ï¼‰
 
-»ù²ã¹¤³ÌÊ¦  ÏîÄ¿¾­Ñé  ¹¤³ÌÊ¦µÄ×ÔÎÒÐÞÑø
+åŸºå±‚å·¥ç¨‹å¸ˆ  é¡¹ç›®ç»éªŒ  å·¥ç¨‹å¸ˆçš„è‡ªæˆ‘ä¿®å…»
 
-ÔúÊµµÄ»ù´¡»áÈÃÄã¸ßÐ§Ñ§Ï°ÐÂ¼¼Êõ
-
-
-JSÖÐÊ¹ÓÃtypeof
+æ‰Žå®žçš„åŸºç¡€ä¼šè®©ä½ é«˜æ•ˆå­¦ä¹ æ–°æŠ€æœ¯
 
 
-window.onload DOMContentLoaded   ä¯ÀÀÆ÷äÖÈ¾¹ý³Ì
+JSä¸­ä½¿ç”¨typeof
+
+
+window.onload    DOMContentLoaded   æµè§ˆå™¨æ¸²æŸ“è¿‡ç¨‹
 
 
 
 
-¶ÔÏó  Êý×é  º¯Êý   ¶¼¾ßÓÐÒýÓÃÀàÐÍ   typeof¿ÉÒÔ²â³öº¯Êý£¬ ÈýÖÖ¶¼ÊÇobject{ } []  null
+å¯¹è±¡  æ•°ç»„  å‡½æ•°   éƒ½å…·æœ‰å¼•ç”¨ç±»åž‹   typeofå¯ä»¥æµ‹å‡ºå‡½æ•°ï¼Œ ä¸‰ç§éƒ½æ˜¯object  { } []  null
 
 
-ÔÄ¶ÁÔ´ÂëÊÇ¸ßÐ§Ìá¸ß¼¼ÄÜµÄ·½Ê½
+é˜…è¯»æºç æ˜¯é«˜æ•ˆæé«˜æŠ€èƒ½çš„æ–¹å¼
 
 
-ËµÒ»ÏÂ±äÁ¿ÌáÉýµÄÀí½â  ËµÃ÷this¼¸ÖÖ²»Í¬µÄÊ¹ÓÃ³¡¾°´´½¨10 ¸öa
+è¯´ä¸€ä¸‹å˜é‡æå‡çš„ç†è§£  è¯´æ˜Žthiså‡ ç§ä¸åŒçš„ä½¿ç”¨åœºæ™¯åˆ›å»º10 ä¸ªa
 
-Ö´ÐÐÉÏÏÂÎÄ   this ×÷ÓÃÓò  ×÷ÓÃÓòÁ´  ±Õ°ü
+æ‰§è¡Œä¸Šä¸‹æ–‡   this  ä½œç”¨åŸŸ  ä½œç”¨åŸŸé“¾  é—­åŒ…
 
 
-Õ¼Î»
+å ä½
 
-Ã»ÓÐ¿é¼¶×÷ÓÃÓò
+æ²¡æœ‰å—çº§ä½œç”¨åŸŸ
 
 if
 
-JS»ù´¡ÖªÊ¶    Ê÷
+JSåŸºç¡€çŸ¥è¯†    æ ‘
 
 BOM
-ÈçºÎ¼ì²âä¯ÀÀÆ÷µÄÀàÐÍ     
+å¦‚ä½•æ£€æµ‹æµè§ˆå™¨çš„ç±»åž‹     
 
-²ð½âURLµÄ¸÷²¿·Ö
+æ‹†è§£URLçš„å„éƒ¨åˆ†
 
 navigator   screen   protocol  serach  hash  
 
 
 
-Ê¹ÓÃµÄ´úÀí
+ä½¿ç”¨çš„ä»£ç†
 
-´úÂë¼ò½à    ¼õÇá·þÎñÆ÷ÇëÇó
+ä»£ç ç®€æ´    å‡è½»æœåŠ¡å™¨è¯·æ±‚
 
 
- ÊÖ¶¯±àÐ´Ò»¸öajax£¬²»ÒÀÀµµÚÈý·½
+ æ‰‹åŠ¨ç¼–å†™ä¸€ä¸ªajaxï¼Œä¸ä¾èµ–ç¬¬ä¸‰æ–¹
 
-¿çÓòµÄ¼¸ÖÖÊµÏÖ·½Ê½  XMLHttpRequest
+è·¨åŸŸçš„å‡ ç§å®žçŽ°æ–¹å¼  XMLHttpRequest
 
-¿çÓò£ºhttp80   https:43 
-Èý¸ö±êÇ©ÔÊÐí¿çÓò¼ÓÔØ×ÊÔ´
-<img src = xxx>  ÓÃÓÚ´òµãÍ³¼Æ
+è·¨åŸŸï¼šhttp80   https:43 
 
-<link href=xxx>  ¿ÉÒÔÊ¹ÓÃCDN
+ä¸‰ä¸ªæ ‡ç­¾å…è®¸è·¨åŸŸåŠ è½½èµ„æº
+<img src = xxx>  ç”¨äºŽæ‰“ç‚¹ç»Ÿè®¡
 
-<script src=xxx> ¿ÉÒÔÊ¹ÓÃCDN£¬¿ÉÒÔÓÃÓÚJSONP
+<link href=xxx>  å¯ä»¥ä½¿ç”¨CDN
 
-  ´¢´æ
+<script src=xxx> å¯ä»¥ä½¿ç”¨CDNï¼Œå¯ä»¥ç”¨äºŽJSONP
 
-cookie  ±¾ÉíÓÃÓÚ¿Í»§¶ËºÍ·þÎñ¶ËÍ¨ÐÅ£¬µ«ÊÇËüÓÐ±¾µØ´æ´¢µÄ¹¦ÄÜ
+  å‚¨å­˜
 
-document.cookie =...»ñÈ¡ºÍÐÞ¸Ä¼´¿É
+cookie  æœ¬èº«ç”¨äºŽå®¢æˆ·ç«¯å’ŒæœåŠ¡ç«¯é€šä¿¡ï¼Œä½†æ˜¯å®ƒæœ‰æœ¬åœ°å­˜å‚¨çš„åŠŸèƒ½
+
+document.cookie =...èŽ·å–å’Œä¿®æ”¹å³å¯
 
 sessionStorage
 
 
 IDE
 webstorm  sublime  vscode  atom(github)  
-²å¼þ  ²å¼þ ²å¼þ  
+
+æ’ä»¶  æ’ä»¶ æ’ä»¶  
 
 sessionStorage  localStorage
 
 
 AMD
 
-È«¾Öº¯Êý  define
+å…¨å±€å‡½æ•°  define
 
-È«¾Öº¯Êý require 
+å…¨å±€å‡½æ•° require 
 
-ÒÀÀµjs »á×Ô¶¯¡¢Òì²½¼ÓÔØ
+ä¾èµ–js ä¼šè‡ªåŠ¨ã€å¼‚æ­¥åŠ è½½
 
-AMD¡¢CommonJSµÄÊ¹ÓÃ³¡¾°
+AMDã€CommonJSçš„ä½¿ç”¨åœºæ™¯
 
-ÐèÒªÒì²½¼ÓÔØÓÃAMD
+éœ€è¦å¼‚æ­¥åŠ è½½ç”¨AMD
 
-Ê¹ÓÃÁËnpmÖ®ºó½¨ÒéÊ¹ÓÃCommonjs
+ä½¿ç”¨äº†npmä¹‹åŽå»ºè®®ä½¿ç”¨Commonjs
 
-  ÔËÐÐ»·¾³
+  è¿è¡ŒçŽ¯å¢ƒ
 
- ÐÔÄÜÓÅ»¯   °²È«ÐÔ
-
-
-1ÊäÈëURL¼ÓÔØHTMLÐÎÊ½    2¼ÓÔØHTMLÖÐµÄ¾²Ì¬×ÊÔ´ÐÎÊ½
-
-Ò³Ãæ¼ÓÔØ¹ý³Ì 
-ä¯ÀÀÆ÷¸ù¾ÝDNS·þÎñÆ÷µÃµ½ÓòÃûµÄIPµØÖ·
-
-ÏòÕâ¸öIPµÄ»úÆ÷·¢ËÍhttpÇëÇó
-·þÎñÆ÷ÊÕµ½£¬´¦Àí²¢·µ»ØhttpÇëÇó
-ä¯ÀÀÆ÷µÃµ½·µ»ØÄÚÈÝ
-
-äÖÈ¾
-HTML½á¹¹Éú³É
-
-Ô­Ôò
-¶àÊ¹ÓÃÄÚ´æ »º´æ   
-¼õÉÙCPU¼ÆËã  ½ÏÉÙÍøÂç
+ æ€§èƒ½ä¼˜åŒ–   å®‰å…¨æ€§
 
 
-ÈëÊÖ£º¼ÓÔØÒ³ÃæºÍ¾²Ì¬×ÊÔ´      Ò³ÃæäÖÈ¾
+1è¾“å…¥URLåŠ è½½HTMLå½¢å¼    2åŠ è½½HTMLä¸­çš„é™æ€èµ„æºå½¢å¼
+
+é¡µé¢åŠ è½½è¿‡ç¨‹ 
+æµè§ˆå™¨æ ¹æ®DNSæœåŠ¡å™¨å¾—åˆ°åŸŸåçš„IPåœ°å€
+
+å‘è¿™ä¸ªIPçš„æœºå™¨å‘é€httpè¯·æ±‚
+æœåŠ¡å™¨æ”¶åˆ°ï¼Œå¤„ç†å¹¶è¿”å›žhttpè¯·æ±‚
+æµè§ˆå™¨å¾—åˆ°è¿”å›žå†…å®¹
+
+æ¸²æŸ“
+HTMLç»“æž„ç”Ÿæˆ
+
+åŽŸåˆ™
+å¤šä½¿ç”¨å†…å­˜ ç¼“å­˜   
+å‡å°‘CPUè®¡ç®—  è¾ƒå°‘ç½‘ç»œ
 
 
-¼ÓÔØÒ³ÃæºÍ¾²Ì¬×ÊÔ´ £º¾²Ì¬×ÊÔ´µÄÑ¹ËõºÏ²¢     ¾²Ì¬×ÊÔ´»º´æÊ¹ÓÃ cdnÈÃ×ÊÔ´¼ÓÔØ¸ü¿ì
+å…¥æ‰‹ï¼šåŠ è½½é¡µé¢å’Œé™æ€èµ„æº      é¡µé¢æ¸²æŸ“
 
-äÖÈ¾ÓÅ»¯£ºcss·ÅÇ°Ãæ  js·ÅºóÃæ     ÀÁ¼ÓÔØ£¨Í¼Æ¬¼ÓÔØ£¬ÏÂÀ­¼ÓÔØ£©
 
-¼õÉÙDOM²éÑ¯£¬¶ÔDOM²éÑ¯×ö»º´æ
+åŠ è½½é¡µé¢å’Œé™æ€èµ„æº ï¼šé™æ€èµ„æºçš„åŽ‹ç¼©åˆå¹¶     é™æ€èµ„æºç¼“å­˜ä½¿ç”¨ cdnè®©èµ„æºåŠ è½½æ›´å¿«
 
-¼õÉÙDOM²Ù×÷£¬¶à¸ö²Ù×÷¾¡Á¿ºÏ²¢ÔÚÒ»ÆðÖ´ÐÐ
+æ¸²æŸ“ä¼˜åŒ–ï¼šcssæ”¾å‰é¢  jsæ”¾åŽé¢     æ‡’åŠ è½½ï¼ˆå›¾ç‰‡åŠ è½½ï¼Œä¸‹æ‹‰åŠ è½½ï¼‰
 
-ÊÂ¼þ½ÚÁ÷
+å‡å°‘DOMæŸ¥è¯¢ï¼Œå¯¹DOMæŸ¥è¯¢åšç¼“å­˜
 
-¾¡ÔçÖ´ÐÐ²Ù×÷  DOMContentLoade
+å‡å°‘DOMæ“ä½œï¼Œå¤šä¸ªæ“ä½œå°½é‡åˆå¹¶åœ¨ä¸€èµ·æ‰§è¡Œ
+
+äº‹ä»¶èŠ‚æµ
+
+å°½æ—©æ‰§è¡Œæ“ä½œ  DOMContentLoade
 
 
 XSS
-ÔÚÐÂÀË²©¿ÍÐ´Ò»ÆªÎÄÕÂ£¬Í¬Ê±ÍµÍµ²åÈëÒ»¶Î¡¶script¡·
-¹¥»÷´úÂëÖÐ£¬»ñÈ¡cookie£¬·¢ËÍµ½×Ô¼ºµÄ·þÎñÆ÷
+åœ¨æ–°æµªåšå®¢å†™ä¸€ç¯‡æ–‡ç« ï¼ŒåŒæ—¶å·å·æ’å…¥ä¸€æ®µã€Šscriptã€‹
+æ”»å‡»ä»£ç ä¸­ï¼ŒèŽ·å–cookieï¼Œå‘é€åˆ°è‡ªå·±çš„æœåŠ¡å™¨
 
-Ç°¶ËÌæ»»¹Ø¼ü×Ö£¬ÀýÈçÌæ»»< &lt;
-ºó¶ËÌæ»»£¨ÍÆ¼ö£©
+å‰ç«¯æ›¿æ¢å…³é”®å­—ï¼Œä¾‹å¦‚æ›¿æ¢< &lt;
+åŽç«¯æ›¿æ¢ï¼ˆæŽ¨èï¼‰
 
 XSRF
-ÄãÒÑ¾­µÇÂ¼Ò»¸ö¹ºÎïÍøÕ¾£¬ÕýÔÚä¯ÀÀÆ÷ÉÌÆ·¡£¡£¡£
+ä½ å·²ç»ç™»å½•ä¸€ä¸ªè´­ç‰©ç½‘ç«™ï¼Œæ­£åœ¨æµè§ˆå™¨å•†å“ã€‚ã€‚ã€‚
 
-Ôö¼ÓÑéÖ¤Á÷³Ì  ÊäÈëÖ¸ÎÆ ÃÜÂë  ¶ÌÐÅÑéÖ¤Âë
+å¢žåŠ éªŒè¯æµç¨‹  è¾“å…¥æŒ‡çº¹ å¯†ç   çŸ­ä¿¡éªŒè¯ç 
 
-×öÒ»Ð©Íâ°üÏîÄ¿£¬»òÕß¿ªÔ´ÏîÄ¿
+åšä¸€äº›å¤–åŒ…é¡¹ç›®ï¼Œæˆ–è€…å¼€æºé¡¹ç›®
 
-ÀÏÊ¦¼òÀúÉÏÐ´Ò»Äê¾­ÑéÃ²ËÆÒÑ¾­Ã»ÃæÊÔ»ú»áÁË
-ÄãÊÇËµÀ­¹³Âð£¬Ò»ÍòÄê²»Æ¥Åä
+è€å¸ˆç®€åŽ†ä¸Šå†™ä¸€å¹´ç»éªŒè²Œä¼¼å·²ç»æ²¡é¢è¯•æœºä¼šäº†
+
+ä½ æ˜¯è¯´æ‹‰é’©å—ï¼Œä¸€ä¸‡å¹´ä¸åŒ¹é…
