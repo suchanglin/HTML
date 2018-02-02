@@ -1,14 +1,13 @@
 <?php
 //设置页面内容是html编码格式是utf-8
-header("Content-Type: text/plain;charset=utf-8"); 
-//header("Content-Type: application/json;charset=utf-8"); 
-//header("Content-Type: text/xml;charset=utf-8"); 
-//header("Content-Type: text/html;charset=utf-8"); 
-//header("Content-Type: application/javascript;charset=utf-8"); 
+header("Content-Type: text/plain;charset=utf-8");
+//header("Content-Type: application/json;charset=utf-8");
+//header("Content-Type: text/xml;charset=utf-8");
+//header("Content-Type: text/html;charset=utf-8");
+//header("Content-Type: application/javascript;charset=utf-8");
 
 //定义一个多维数组，包含员工的信息，每条员工信息为一个数组
-$staff = array
-	(
+$staff = array(
 		array("name" => "洪七", "number" => "101", "sex" => "男", "job" => "总经理"),
 		array("name" => "郭靖", "number" => "102", "sex" => "男", "job" => "开发工程师"),
 		array("name" => "黄蓉", "number" => "103", "sex" => "女", "job" => "产品经理")
@@ -38,11 +37,11 @@ function search(){
 	//获取number参数
 	$number = $_GET["number"];
 	$result = "没有找到员工。";
-	
+
 	//遍历$staff多维数组，查找key值为number的员工是否存在，如果存在，则修改返回结果
 	foreach ($staff as $value) {
 		if ($value["number"] == $number) {
-			$result = "找到员工：员工编号：" . $value["number"] . "，员工姓名：" . $value["name"] . 
+			$result = "找到员工：员工编号：" . $value["number"] . "，员工姓名：" . $value["name"] .
 			                  "，员工性别：" . $value["sex"] . "，员工职位：" . $value["job"];
 			break;
 		}
@@ -61,7 +60,7 @@ function create(){
 		return;
 	}
 	//TODO: 获取POST表单数据并保存到数据库
-	
+
 	//提示保存成功
 	echo "员工：" . $_POST["name"] . " 信息保存成功！";
 }
