@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>使用getJSON()方法异步加载JSON格式数据</title>
+        <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id="divtest">
+            <div class="title">
+                <span class="fl">我最喜欢的一项运动</span>
+                <span class="fr">
+                    <input id="btnShow" type="button" value="加载" />
+                </span>
+            </div>
+            <ul></ul>
+        </div>
+
+        <script type="text/javascript">
+         $(function () {
+                $("#btnShow").bind("click", function () {
+                    var $this = $(this);
+                    $.getScript('getscript.js',function(){
+                        $this.attr("disabled", "true");
+                    });
+                })
+            });
+        </script>
+    </body>
+</html>
