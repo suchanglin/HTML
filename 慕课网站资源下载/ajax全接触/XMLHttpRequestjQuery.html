@@ -42,13 +42,15 @@
     <p id="createResult"></p>
     <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
     <script>
+
+        //get 方法
     $(document).ready(function() {
         $("#search").click(function() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:8080/ajaxdemo/serverjson2.php?number=" + $("#keyword").val(),
+                url: "http://127.0.0.1:80/img/serverjson2.php?number=" + $("#keyword").val(),               //拼接
                 dataType: "json",
-                success: function(data) {
+                success: function(data) {     //data内部为原生request.responseText
                     if (data.success) {
                         $("#searchResult").html(data.msg);
                     } else {
@@ -56,16 +58,18 @@
                     }
                 },
                 error: function(jqXHR) {
-                    alert("发生错误：" + jqXHR.status);
+                    alert("发生错误：" + jqXHR.status);         //原生request.status
                 },
             });
         });
 
+
+     //POST方法
         $("#save").click(function() {
             $.ajax({
                 type: "POST",
                 url: "serverjson.php",
-                data: {
+                data: {          //直接JavaScript对象形式，内部实现了拼接
                     name: $("#staffName").val(),
                     number: $("#staffNumber").val(),
                     sex: $("#staffSex").val(),

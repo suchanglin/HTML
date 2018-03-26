@@ -41,6 +41,8 @@
     <button id="save">保存</button>
     <p id="createResult"></p>
     <script>
+       // 本例子分别说明了采用get和post方法进行解释
+
     document.getElementById("search").onclick = function() {
         var request = new XMLHttpRequest();
         request.open("GET", "server.php?number=" + document.getElementById("keyword").value);
@@ -63,7 +65,7 @@
             "&number=" + document.getElementById("staffNumber").value +
             "&sex=" + document.getElementById("staffSex").value +
             "&job=" + document.getElementById("staffJob").value;
-        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");//很重要
         request.send(data);
         request.onreadystatechange = function() {
             if (request.readyState === 4) {

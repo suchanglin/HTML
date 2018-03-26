@@ -44,12 +44,12 @@
     document.getElementById("search").onclick = function() {
         var request = new XMLHttpRequest();
         request.open("GET", "serverjson.php?number=" + document.getElementById("keyword").value);
-        request.send();
+        request.send();       //服务器的文件名和文件内容也进行了修改，变为json格式
         request.onreadystatechange = function() {
             if (request.readyState === 4) {
                 if (request.status === 200) {
-                    var data = JSON.parse(request.responseText);
-                    if (data.success) {
+                    var data = JSON.parse(request.responseText); //对返回的json字符串进行解析
+                    if (data.success) {                          //使之变成JavaScript对象再访问
                         document.getElementById("searchResult").innerHTML = data.msg;
                     } else {
                         document.getElementById("searchResult").innerHTML = "出现错误：" + data.msg;

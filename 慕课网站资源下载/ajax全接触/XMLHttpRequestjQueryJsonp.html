@@ -40,13 +40,13 @@
     <br>
     <button id="save">保存</button>
     <p id="createResult"></p>
-    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script>
     $(document).ready(function() {
         $("#search").click(function() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:8000/ajaxdemo/serverjsonp.php?number=" + $("#keyword").val(),
+                url: "http://127.0.0.1:80/serverjsonp.php?number=" + $("#keyword").val(),
                 dataType: "jsonp",
                 jsonp: "callback",
                 success: function(data) {
