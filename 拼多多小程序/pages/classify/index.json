@@ -1,6 +1,0 @@
-{
-    "navigationBarTitleText": "分类",
-    "usingComponents": {
-      "loadmore": "../../components/loadmore/index"
-    }
-}
