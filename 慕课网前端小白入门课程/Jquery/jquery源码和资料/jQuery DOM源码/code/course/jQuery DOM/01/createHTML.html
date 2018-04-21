@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>create HTML</title>
+</head>
+
+<body>
+    <script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+        var div = $('<div>Hello</div>');
+
+        console.log(div);
+
+        console.log($('div'));
+
+        div.appendTo('body');
+
+        console.log($('div'));
+
+        var link = $('<a>', {
+            text: '百度',
+            href: 'https://www.baidu.com',
+            target: '_blank',
+            title: '去往百度首页'
+        });
+
+        link.appendTo('body');
+
+        var link2 = $('<a>百度</a>').attr({
+            href: 'https://www.baidu.com',
+            target: '_blank',
+            title: '去往百度首'
+        });
+
+        link2.appendTo('body');
+    });
+    </script>
+</body>
+
+</html>

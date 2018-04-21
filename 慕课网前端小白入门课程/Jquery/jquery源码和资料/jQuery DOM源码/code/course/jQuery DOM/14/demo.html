@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <style>
+    p {
+        font-size: 12px;
+    }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, veritatis.</p>
+    <div class="item"></div>
+    <script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+
+        var element = $('p');
+
+        //        element.on('click', function () {
+        //            $(this).css('fontSize', '+=5')
+        //        }).data('data', 'demo')
+        //
+        //        element.detach()
+        //
+        //        console.log(element);
+        //
+        //        element.appendTo($('.item'))
+        //
+        //        console.log(element.data());
+
+        element.empty();
+    });
+    </script>
+</body>
+
+</html>

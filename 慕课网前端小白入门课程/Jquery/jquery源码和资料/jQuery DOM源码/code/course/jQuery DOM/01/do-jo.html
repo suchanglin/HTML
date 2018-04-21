@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Object vs jQuery Object</title>
+</head>
+
+<body>
+    <div id="div">div</div>
+    <script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+        var DOMObject = document.getElementById('div');
+        var jQueryObject = $('#div');
+
+        console.log('DOMObject.nodeType: %s', DOMObject.nodeType);
+        console.log('DOMObject.jquery: %s', DOMObject.jquery);
+
+        console.log('jQueryObject.nodeType: %s', jQueryObject.nodeType);
+        console.log('jQueryObject.jquery: %s', jQueryObject.jquery);
+
+        console.log('jQueryObject.get(0): %o', jQueryObject.get(0));
+        console.log('$(DOMObject): %o', $(DOMObject));
+
+        console.log('jQueryObject.get(0).nodeType: %s', jQueryObject.get(0).nodeType);
+        console.log('$(DOMObject).jquery: %s', $(DOMObject).jquery);
+    });
+    </script>
+</body>
+
+</html>
