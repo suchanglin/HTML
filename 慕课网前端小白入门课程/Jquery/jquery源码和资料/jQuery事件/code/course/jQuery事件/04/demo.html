@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+
+<body>
+    <h2>title</h2>
+    <div class="item">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <ul>
+        <li class="item1">新闻标题-1</li>
+        <li class="item2">新闻标题-2</li>
+        <li class="item3">新闻标题-3</li>
+        <li class="item4">新闻标题-4</li>
+        <li class="item5">新闻标题-5</li>
+        <li class="item6">新闻标题-6</li>
+        <li class="item7">新闻标题-7</li>
+        <li class="item8">新闻标题-8</li>
+        <li class="item9">新闻标题-9</li>
+    </ul>
+    <div id="p1">
+        <div id="p1-1">
+            <div id="p1-1-1">
+                <div id="p1-1-1-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto beatae delectus enim ipsum iusto laborum, libero minus perspiciatis quae quidem rem sed soluta velit veniam voluptatem voluptates voluptatibus. Repudiandae.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../../vendor/jquery-1.12.4.js"></script>
+    <script>
+    $(function() {
+
+        //        $('p')
+        //            .on('click', null, null, function (e) {
+        //                console.log('p clicked');
+        //            })
+        //            .on('click', function (e) {
+        //                console.log('p clicked2');
+        //            })
+        //            .on('click', { foo: 'bar' }, function (e) {
+        //                console.log('p clicked3 %o', e.data);
+        //            })
+        //            .on('mouseover', function (e) {
+        //                console.log('p mouseover');
+        //            })
+        //            .on('mouseover', function (e) {
+        //                console.log('p mouseover2');
+        //            })
+        //            .on('click mouseover', function (e) {
+        //                console.log('p click or mouseover');
+        //            })
+
+        //        $('ul').on('click', 'li.item2', function () {
+        //            console.log('li clicked');
+        //        })
+
+        //        $('li').on('click', function (e) {
+        //            console.log('Clicked: %o', $(this));
+        //        })
+
+        //        $('ul').on('click', 'li', function (e) {
+        //            console.log('Clicked: %o', $(e.target));
+        //        })
+
+        //        $('div').on('click', function () {
+        //            console.log(this.id);
+        //        })
+        //        $('p').on('click', function (e) {
+        //            e.stopPropagation()
+        //            console.log('clicked p');
+        //        })
+
+        //        $('p').on({
+        //            click: function () {
+        //                console.log('click');
+        //            },
+        //            mouseover: function () {
+        //                console.log('mouseover');
+        //            }
+        //        })
+
+        $('p').one('click', function(e) {
+            console.log('clicked p');
+        });
+    });
+    </script>
+</body>
+
+</html>
