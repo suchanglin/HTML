@@ -72,7 +72,7 @@ CSS面试题
 1.简要说一下CSS的元素分类
 
 块级元素：div,p,h1,form,ul,li;
-行内元素 : span>,a,label,input,img,strong,em;
+行内元素 : span,a,label,input,img,strong,em;
 
 2.CSS隐藏元素的几种方法（至少说出三种）
 
@@ -203,10 +203,10 @@ Object number function boolean underfind;
 强制（parseInt,parseFloat,number）   隐式（== – ===）；
 
 
-3.数组方法pop() push() unshift() shift()
+3.数组方法 pop() push() unshift() shift()
 
-Push()尾部添加 pop()尾部删除
-Unshift()头部添加 shift()头部删除
+push()尾部添加 pop()尾部删除
+unshift()头部添加 shift()头部删除
 
 
 4.ajax请求的时候get 和post方式的区别?
@@ -238,9 +238,9 @@ Object.apply(this,arguments)
 9.添加 删除 替换 插入到某个接点的方法
 
 obj.appendChidl()
-obj.innersetBefore
-obj.replaceChild
-obj.removeChild
+obj.insertBefore()
+obj.replaceChild()
+obj.removeChild()
 
 10.说一下什么是javascript的同源策略？
 
@@ -251,65 +251,35 @@ obj.removeChild
 
 function A(name){
     this.name = name;
-    this.sayHello = function(){alert(this.name+” say Hello!”);};
+    this.sayHello = function(){alert(this.name + "say Hello!")}
 }
 function B(name,id){
     this.temp = A;
     this.temp(name);        //相当于new A();
-    delete this.temp;       
-     this.id = id;   
+    delete this.temp;
+    this.id = id;
     this.checkId = function(ID){alert(this.id==ID)};
 }
-1
-2
-3
-4
-5
-6
-7
-8
 
-function A(name){
-    this.name = name;
-    this.sayHello = function(){alert(this.name+” say Hello!”);};
-}
-function B(name,id){
-    this.temp = A;
-    this.temp(name);        //相当于new A();
-    delete this.temp;       
-     this.id = id;   
-    this.checkId = function(ID){alert(this.id==ID)};
-}
+
+
 
 
 12.如何阻止事件冒泡和默认事件
 
 
 
-function stopBubble(e)
-{
-    if (e && e.stopPropagation)
+function stopBubble(e){
+    if (e && e.stopPropagation){
         e.stopPropagation()
-    else
+    }
+    else{
         window.event.cancelBubble=true
-}
+    }
 return false
-1
-2
-3
-4
-5
-6
-7
-8
-function stopBubble(e)
-{
-    if (e && e.stopPropagation)
-        e.stopPropagation()
-    else
-        window.event.cancelBubble=true
+
 }
-return false
+
 
 
 
@@ -336,25 +306,7 @@ fn.prototype = {
 var myfn = new fn();
 myfn.b();
 myfn.c();
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
+
 function fn() {
     this.a = 0;
     this.b = function() {
@@ -399,17 +351,7 @@ function fun(n,o) {
 var a = fun(0);  a.fun(1);  a.fun(2);  a.fun(3);
 var b = fun(0).fun(1).fun(2).fun(3);
 var c = fun(0).fun(1);  c.fun(2);  c.fun(3);
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
+
 function fun(n,o) {
   console.log(o)
   return {
@@ -444,15 +386,8 @@ var name = 'World!';
         console.log('Hello ' + name);
     }
 })();
-1
-2
-3
-4
-5
-6
-7
-8
-9
+
+
 var name = 'World!';
 (function () {
     if (typeof name === 'undefined') {
@@ -473,11 +408,11 @@ var name = 'World!';
 
 18.介绍下你最常用的一款框架
 
-jquery,rn,angular等;
+jquery,rn,angular,vue等;
 
 19.对于前端自动化构建工具有了解吗？简单介绍一下
 
-Gulp,Grunt等；
+webpack,Gulp,Grunt等；
 
 20.介绍一下你了解的后端语言以及掌握程度
 
