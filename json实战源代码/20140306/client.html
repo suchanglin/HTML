@@ -16,20 +16,17 @@ and open the template in the editor.
             $("document").ready(function() {
                 var url = "server.php?inAjax=1&do=checkMember&username=ericwolf";
                 var data = {};
-                
+
                 $.get(url, data, function(res) {
-                    
-                    
-                    
                     var jsonObj = eval("(" + res + ")");
                     $("#username").val(jsonObj.username);
                     $("#groupname").val(jsonObj.groupname);
                     $("#uid").val(jsonObj.uid);
                 });
-                
-               
-                
-                
+
+
+
+
             });
         </script>
 
