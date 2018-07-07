@@ -9,7 +9,7 @@ and open the template in the editor.
         <title>第二个实战</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript">
             $("document").ready(function() {
                 var url = "shizhan2.php";
@@ -19,12 +19,12 @@ and open the template in the editor.
                     $("#username").val(res.username);
                     $("#password").val(res.password);
                 });
-                
+
                 var data = {"do": "second"};
                 $.getJSON(url, data, function(res) {
                     $("#members").val(res.third.members.username);
                 });
-                
+
                 var data={"do":"third"};
                 $.getJSON(url,data,function(res){
                     $("#address").val(res.address[1].username);

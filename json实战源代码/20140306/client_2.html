@@ -14,10 +14,10 @@ and open the template in the editor.
     <body>
         <script type="text/javascript">
             $("document").ready(function() {
-                
+
                 var url ="client_2.php";
                 var data={};
-                
+
                 $.getJSON(url,data,function(res){
 //                    $("#username").val(res.username);
 //                    $("#address").val(res.address);
@@ -26,7 +26,7 @@ and open the template in the editor.
 $("#username").val(res.username);
 $("#address").val(res.age);
                 });
-                
+
 
             });
         </script>
