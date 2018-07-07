@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -11,7 +10,6 @@
         margin: 0;
         padding: 0;
     }
-
     #div1 {
         width: 200px;
         height: 200px;
@@ -20,7 +18,6 @@
         left:-200px;
         top: 0;
     }
-
     #div1 span {
         width: 20px;
         height: 50px;
@@ -35,29 +32,22 @@
 <body>
 
   <div id="div1"><span>分享</span></div>
-
     <script>
     window.onload = function() {
         var oDiv = document.getElementById('div1');
-
-        //鼠标移入
+        // 鼠标移入
         oDiv.onmouseover = function() {
             startmove(0);
-
         }
-        //鼠标移出
+        // 鼠标移出
         oDiv.onmouseout = function() {
-
             startmove(-200);
     }
     var timer = null;
-
     function startmove(target) {
         clearInterval(timer);
         var oDiv = document.getElementById('div1');
-
         timer = setInterval(function() {
-
             if (oDiv.offsetLeft > target) {
                 speed = -10;
             } else {
