@@ -3,18 +3,14 @@ function starMove(obj, json, fn) {
     obj.timer = setInterval(function() {
         var istrue = true;
         for (var attr in json) {
-
             var icur = 0;
-
             if (attr == "opacity") {
                 icur = parseFloat(getStyle(obj, attr)) * 100;
             } else {
                 icur = parseInt(getStyle(obj, attr));
             }
-
             var speed = (json[attr] - icur) / 8;
             speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
-
             if (icur != json[attr]) {
                 var istrue = false;
             }
@@ -30,6 +26,9 @@ function starMove(obj, json, fn) {
             if (fn) { fn() };
         }
     }, 30)
+
+
+
 }
 
 function getStyle(obj, attr) {
