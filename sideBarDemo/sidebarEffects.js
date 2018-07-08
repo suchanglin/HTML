@@ -28,3 +28,4 @@ function fadeOutLeft(e) {
     sidebarEl.classList.add('move_left');
 
 }
+

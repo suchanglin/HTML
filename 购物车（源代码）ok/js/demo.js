@@ -139,28 +139,28 @@ window.onload = function () {
             if (this.value != val) {
                 this.value = val;
             }
-            getSubtotal(this.parentNode.parentNode); //更新小计
-            getTotal(); //更新总数
+            getSubtotal(this.parentNode.parentNode); // 更新小计
+            getTotal(); // 更新总数
         }
     }
 
     // 点击全部删除
     deleteAll.onclick = function () {
         if (selectedTotal.innerHTML != 0) {
-            var con = confirm('确定删除所选商品吗？'); //弹出确认框
+            var con = confirm('确定删除所选商品吗？'); // 弹出确认框
             if (con) {
                 for (var i = 0; i < tr.length; i++) {
                     // 如果被选中，就删除相应的行
                     if (tr[i].getElementsByTagName('input')[0].checked) {
                         tr[i].parentNode.removeChild(tr[i]); // 删除相应节点
-                        i--; //回退下标位置
+                        i--; // 回退下标位置
                     }
                 }
             }
         } else {
             alert('请选择商品！');
         }
-        getTotal(); //更新总数
+        getTotal(); // 更新总数
     }
 
     // 默认全选
