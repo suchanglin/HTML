@@ -127,7 +127,7 @@ window.onload = function () {
                     if (conf) {
                         this.parentNode.removeChild(this);
                     }
-                    break
+                    break;
                 default :
                     break;
             }

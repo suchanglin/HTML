@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>基础表单</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>基础表单</title>
+    <style type="text/css">
+     :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #f00;
+    }
+
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #f00;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: #f00;
+    }
+
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: #f00;
+    }
+    </style>
 </head>
+
 <body>
-  <form>
-  	姓名：<input type="text" name="username"/>
-  	密码：<input type="password" name="paw"/>
-  	<input type="submit"/>
-  </form>
-    	
+    <input type="text" placeholder="请输入手机号" class="inp-fon">
+    <form>
+        姓名：
+        <input type="text" name="username" /> 密码：
+        <input type="password" name="paw" />
+        <input type="submit" />
+    </form>
+    <form>
+        姓名：
+        <input type="text" name="username" placeholder="placeholder">
+    </form>
+    <input type="text" value="请输入手机号" class="inp-fon">
+    <script type="text/javascript">
+    $(".inp-fon").focus(function() {
+        var oldValue = $(this).val(); // 取出默认值
+        if (oldValue == this.defaultValue) { //
+            $(this).val("").addClass('focus-fon'); // 清空表单框，并添加新的样式
+        }
+    }).blur(function() {
+        var oldValue = $(this).val(); // 获取失焦后表单框的值
+        if (oldValue == "") { // 若没有值，设置为原来的值，删除样式（还原样式）
+            $(this).val(this.defaultValue).removeClass('focus-fon');
+        }
+    });
+    </script>
+    <script type="text/javascript">
+    $(".inp-fon").focus(function() {
+        var oldValue = $(this).val();
+        if (oldValue == this.defaultValue) {
+            $(this).val("").addClass('focus-fon');
+        }
+    }).blur(function() {
+        var oldValue = $(this).val();
+        if (oldValue == "") {
+            $(this).val(this.defaultValue).removeClass('focus-fon');
+        }
+    });
+    </script>
 </body>
+
 </html>

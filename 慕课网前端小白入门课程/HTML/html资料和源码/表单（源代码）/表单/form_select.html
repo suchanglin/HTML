@@ -5,8 +5,8 @@
 	<title>表单select</title>
 </head>
 <body>
- <h1 align="center">注册信息</h1> 
- <hr color="#336699"/> 
+ <h1 align="center">注册信息</h1>
+ <hr color="#336699"/>
  <form action="action.php" method="post" target="_blank">
   <table width="600px" bgcolor="#f2f2f2" align="center" >
        <tr>
@@ -52,7 +52,7 @@
        	   <td align="right">城市：</td>
        	   <td align="left">
        	   	   <select name="city">
-       	   	      <option value="xz">--请选择--</option>
+       	   	        <option value="xz">--请选择--</option>
        	   	   	  <option value="bj" selected>北京</option>
        	   	   	  <option value="tj">天津</option>
        	   	   	  <option value="hb">河北</option>
@@ -74,7 +74,7 @@
 
        	   	    <select name="city">
        	   	      <option>--请选择--</option>
-       	   	      <optgroup label="华北">
+       	   	<optgroup label="华北">
        	   	   	  <option value="bj" selected>北京</option>
        	   	   	  <option value="tj">天津</option>
        	   	   	  <option value="hb">河北</option>
@@ -101,26 +101,26 @@
        	   	   </select>
 
        	   </td>
-       </tr> 
+       </tr>
        <tr>
        	  <td align="right">简介:</td>
        	  <td align="left"><textarea name="jj" rows="6" cols="50" placeholder="请输入个人介绍"></textarea></td>
-       </tr>          
+       </tr>
        <tr >
        	   <td colspan="2" align="center"><input type="button" value="来点我" name="button"/>
        	   <input type="submit" value="submit" name="submit"/>
        	   <input type="reset" value="reset" name="reset"/>
        	   <input type="image" name="image_button" src="image/image-button.png"/>
        	   </td>
-       	   
-       	   
+
+
        </tr>
        <tr>
        	  <td><input type="hidden" name="hidden" value="这是一个用户注册信息"/></td>
        	  <td></td>
-       </tr>       
+       </tr>
 
   </table>
- </form>   	
+ </form>
 </body>
 </html>

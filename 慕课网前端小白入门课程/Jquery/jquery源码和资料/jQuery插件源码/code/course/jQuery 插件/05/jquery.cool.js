@@ -1,28 +1,25 @@
 (function($) {
     var namespace = 'colorful';
-
     var methods = {
         init: function(options) {
             options = $.extend({}, $.fn[namespace].defaults, options);
-
             if (options.font) {
                 this.css('color', options.color);
             }
             if (options.background) {
                 this.css('background-color', options.color);
             }
-
             return this;
         }
     };
 
-    $.fn[namespace] = function(method) {
+    $.fn[namespace] = function(method) {  // 若没有return，就使用不了链式调用，插件正常使用
         if (methods[method]) {
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
         } else if ($.type(method) === 'object') {
             return methods.init.apply(this, arguments);
         } else {
-            $.error('Method' + method + ' does not exist!');
+            $.error('Method: ' + method + ' does not exist!');
         }
     };
 
