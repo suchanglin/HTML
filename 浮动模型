@@ -1,0 +1,30 @@
+左右设置margin值不会被折叠，就是取大的值。垂直方向上，上元素设置margin-bottom，下元素设置margin-top,不会直接取两值之和，取值大者。
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>浮动模型</title>
+    <style type="text/css">
+    div {
+        background-color: pink;
+        width: 150px;
+        height: 150px;
+        /* float: left; */
+       /*  margin-left: 10px; */
+    }
+    #div1{
+      /* margin-right: 10px; */
+      margin-bottom: 10px;
+    }
+    #div2 {
+      /* margin-left: 30px; */
+      margin-top: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div id="div1">栏目1</div>
+    <div id="div2">栏目2</div>
+</body>
+</html>
