@@ -1,8 +1,4 @@
-/**
- * 操作localStorage机公用方法
- * Author： www.mybry.com:dunizb
- * Date：2016/7/14 0014.
- */
+
 window.Mybry = {};
 
 Mybry.transitionEnd  = function(dom,callback){
