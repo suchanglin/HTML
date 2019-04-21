@@ -1,0 +1,17 @@
+
+/* 30分钟没有操作调回登录界面 creat@date 2018-7-4 by 段凯 */
+        var maxTime = 60*30; // seconds
+        var time = maxTime;
+        $('body').on('keydown mousemove mousedown', function(e) {
+            time = maxTime; // reset
+        });
+        var intervalId = setInterval(function() {
+            time--;
+            if (time <= 0) {
+                ShowInvalidLoginMessage();
+                clearInterval(intervalId);
+            }
+        }, 1000)
+        function ShowInvalidLoginMessage() {
+             window.location.href = 'backstagelogin.html';
+        }
