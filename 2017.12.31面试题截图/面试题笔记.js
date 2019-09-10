@@ -51,3 +51,8 @@ s4.play  //[1,2,3]
 //解决方案：
 Child3.prototype =Object.create( Parent3.prototype);  //中间桥梁
 Child3.prototype.constructor = Child3;
+
+
+
+
+🙃🙃🙃🙃
