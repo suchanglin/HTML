@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "3.x.x",
+    "eslint": "4.x.x",
     "eslint-config-ttdefault": "^1.0.6",
     "eslint-loader": "1.x.x",
     "eslint-plugin-html": "^2.0.1"
