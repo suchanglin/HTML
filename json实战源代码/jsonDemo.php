@@ -1,7 +1,7 @@
 <?php
 $memberInfo = array();
 $memberInfo['username'] = "eric";
-$memberInfo['truename'] = "袁明贺";
+$memberInfo['truename'] = "苏长林";
 $memberInfo['age'] = 25;
 $memberInfo['imooc'] = "http://www.imooc.com";
 $memberInfo['hobby']['one'] = "developer";
